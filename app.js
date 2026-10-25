@@ -12,7 +12,7 @@ document.querySelectorAll("[data-restaurant-name]").forEach((element) => {
   element.textContent = restaurant.name.toLocaleUpperCase("pt-BR");
 });
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  restaurant.address,
+  `${restaurant.name}, ${restaurant.address}`,
 )}`;
 
 const actionFeedback = document.querySelector("#action-feedback");
@@ -53,7 +53,11 @@ document.querySelectorAll("[data-instagram-contact]").forEach((link) => {
 document.querySelector("[data-maps]").href = mapsUrl;
 document.querySelector("[data-maps]").target = "_blank";
 document.querySelector("[data-maps]").rel = "noopener noreferrer";
-document.querySelector("[data-address]").textContent = restaurant.address;
+document.querySelector("[data-address]").replaceChildren(
+  restaurant.name,
+  document.createElement("br"),
+  restaurant.address,
+);
 document.querySelector("[data-location]").textContent = restaurant.locationLabel;
 document.querySelector("[data-hours]").innerHTML = restaurant.hours;
 
