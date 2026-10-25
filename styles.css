@@ -649,6 +649,10 @@ blockquote {
 }
 
 @media (max-width: 680px) {
+  body {
+    background: #352b24;
+  }
+
   html {
     scroll-padding-top: 70px;
   }
@@ -733,7 +737,7 @@ blockquote {
     min-height: min(740px, 100svh);
     align-items: center;
     padding: 120px 25px 100px;
-    background-position: 58% center;
+    background: #352b24 url("origens-restaurant.png") 58% center / cover no-repeat;
   }
 
   .hero-shade {
@@ -743,7 +747,7 @@ blockquote {
 
   .hero h1 {
     margin-top: 23px;
-    font-size: clamp(52px, 14vw, 76px);
+    font-size: clamp(40px, 10.5vw, 68px);
   }
 
   .hero-description {
@@ -778,6 +782,7 @@ blockquote {
     display: block;
     padding-top: 76px;
     padding-bottom: 78px;
+    background: var(--paper);
   }
 
   .intro h2,
@@ -802,6 +807,7 @@ blockquote {
   .menu-section {
     padding-top: 76px;
     padding-bottom: 72px;
+    background: var(--cream);
   }
 
   .section-heading {
@@ -840,6 +846,7 @@ blockquote {
     gap: 30px;
     padding-top: 77px;
     padding-bottom: 78px;
+    background: var(--paper);
   }
 
   .visit-details {
