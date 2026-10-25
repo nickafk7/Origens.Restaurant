@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comida de verdade, ingredientes de origem e uma mesa sempre pronta para receber. Conheça nosso restaurante."
+    />
+    <meta name="theme-color" content="#171713" />
+    <title>Restaurante — Cozinha de brasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Origens Restaurant — início">
+        <span class="brand-logo-frame" aria-hidden="true">
+          <img class="brand-logo" src="https://a.imagem.app/GCMMy2.th.jpeg" alt="" />
+        </span>
+        <span class="brand-name">Origens Restaurant</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu lateral"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-label" aria-hidden="true">MENU</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="#sobre">Nossa casa</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#visite">Onde estamos</a>
+        <a class="nav-cta" data-instagram-dm="reservation" href="https://www.instagram.com/direct/t/17842052847211480/">Reserve sua mesa <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <h1 id="hero-title">O melhor da vida<br />acontece <em>à mesa.</em></h1>
+          <p class="hero-description">
+            Sabores que surpreendem, bons encontros e momentos que dão vontade
+            de ficar mais um pouco.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#cardapio">Explore o cardápio <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#sobre">Conheça nossa casa <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>FEITO COM CALMA. SERVIDO COM CARINHO.</span>
+          <a href="#sobre" aria-label="Rolar para conhecer nossa casa">↓</a>
+          <span class="hero-location" data-location>PINHEIROS, SÃO PAULO</span>
+        </div>
+      </section>
+
+      <section class="intro section-pad" id="sobre">
+        <div class="intro-label">
+          <span class="section-number">01 /</span>
+          <span>UM LUGAR PARA FICAR</span>
+        </div>
+        <div class="intro-copy">
+          <h2>Mais do que comida.<br /><em>Um motivo para reunir.</em></h2>
+          <div class="intro-bottom">
+            <p>
+              Acreditamos na cozinha sem pressa, nos bons ingredientes e na
+              mesa compartilhada. Nossa brasa trabalha todos os dias para
+              transformar encontros simples em momentos que ficam.
+            </p>
+            <a class="circle-link" href="#visite" aria-label="Encontre nosso restaurante">↗</a>
+          </div>
+        </div>
+        <div class="intro-image" role="img" aria-label="Interior aconchegante de restaurante à luz quente"></div>
+      </section>
+
+      <section class="menu-section section-pad" id="cardapio">
+        <div class="section-heading">
+          <div>
+            <div class="intro-label"><span class="section-number">02 /</span><span>DA BRASA PARA A MESA</span></div>
+            <h2>Nosso <em>cardápio.</em></h2>
+          </div>
+          <a class="button button-primary menu-pdf-link" href="https://drive.google.com/file/d/1kNC1XzAh_smav9gXcaLYhcY8ANFTQoyT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Ampliar cardápio para ler <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="menu-pdf-hint">Use o botão + no leitor para ampliar as letras ou abra o cardápio em uma nova aba.</p>
+        <div class="menu-pdf">
+          <iframe
+            class="menu-pdf-viewer"
+            src="https://drive.google.com/file/d/1kNC1XzAh_smav9gXcaLYhcY8ANFTQoyT/preview"
+            title="Cardápio do Origens Restaurant em PDF. Use os controles de zoom para ampliar o texto."
+            allow="autoplay"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="quote-image" role="img" aria-label="Prato artesanal servido em mesa de madeira"></div>
+        <div class="quote-copy">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>Comida boa alimenta. Mesa cheia alimenta a alma.</blockquote>
+          <span class="quote-credit">UM JEITO SIMPLES DE VER A VIDA</span>
+        </div>
+      </section>
+
+      <section class="visit-section section-pad" id="visite">
+        <div class="visit-heading">
+          <div class="intro-label"><span class="section-number">03 /</span><span>VAI SER UM PRAZER</span></div>
+          <h2>Sua mesa<br />está <em>esperando.</em></h2>
+          <a class="button button-primary" data-instagram-dm="reservation" href="https://www.instagram.com/direct/t/17842052847211480/">Faça sua reserva <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="visit-details">
+          <div class="detail-block">
+            <span class="detail-label">ONDE</span>
+            <p data-address>Rua dos Pinheiros, 420<br />Pinheiros · São Paulo, SP</p>
+            <p class="hotel-location">
+              Estamos localizados no
+              <a data-instagram-profile href="https://www.instagram.com/radissonredcampinas/" target="_blank" rel="noopener noreferrer">@radissonredcampinas</a>
+            </p>
+            <a class="detail-link" data-maps href="#visite">Como chegar <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">QUANDO</span>
+            <p data-hours>Ter–Sex · 12h–15h, 19h–23h<br />Sáb–Dom · 12h–23h</p>
+          </div>
+          <div class="detail-block">
+            <span class="detail-label">FALE COM A GENTE</span>
+            <a class="contact-link" data-instagram-contact href="https://www.instagram.com/origensrestaurantecampinas/" target="_blank" rel="noopener noreferrer">@origensrestaurantecampinas</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio" aria-label="Origens Restaurant — voltar ao início">
+        <span class="brand-logo-frame" aria-hidden="true">
+          <img class="brand-logo" src="https://a.imagem.app/GCMMy2.th.jpeg" alt="" />
+        </span>
+        <span class="brand-name">Origens Restaurant</span>
+      </a>
+      <span>COMIDA DE VERDADE. GENTE POR PERTO.</span>
+      <span>© <span id="year"></span> <span data-restaurant-name>CASA DO FOGO</span></span>
+    </footer>
+    <p class="action-feedback" id="action-feedback" role="status" aria-live="polite" hidden></p>
+  </body>
+</html>
